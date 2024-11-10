@@ -1,14 +1,23 @@
 import random
 
-def random_integers(min, max): # function to select random integer
+def random_integers(min, max):
+    ''' 
+    function to select random integer
+    '''
     return random.randint(min, max)
 
 
-def random_operator(): # Adding a function to select a random operator among +. - and *
+def random_operator(): 
+    '''
+    Adding a function to select a random operator among +. - and *
+    '''
     return random.choice(['+', '-', '*'])
 
 
-def problem_question(n1, n2, o): # Adding a function to create maths equations with the selected operator
+def problem_question(n1, n2, o): 
+    '''
+    Adding a function to create maths equations with the selected operator
+    '''
     p = f"{n1} {o} {n2}"
     if o == '+': a = n1 + n2 # if operator from function randon_operator() is +, add
     elif o == '-': a = n1 - n2  # if operator from function randon_operator() is -, subtract
@@ -16,6 +25,9 @@ def problem_question(n1, n2, o): # Adding a function to create maths equations w
     return p, a 
 
 def math_quiz():
+    '''
+    Adding a function to create a maths quiz with random numbers and operators from the abov
+    '''
     correct_answers = 0 # variable with initial score value = 0
     total_questions = 5 # Total number of questions
 
